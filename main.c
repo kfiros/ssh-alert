@@ -80,7 +80,6 @@ int main(int argc, char * argv[]) {
 
 			case 'l': 
 				lflag = true;
-				/* CR: Buffer overrun */
 				strncpy(arg_log_path, optarg, MAX_PATH_LENGTH);
 				DBG_PRINT("Argument 'l' = %s ", arg_log_path);
 				break;
